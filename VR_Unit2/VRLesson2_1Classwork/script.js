@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded",function() {
       dodecahedron.setAttribute("color", "pink");
 
       octahedron.setAttribute("position", "6 0 2");
-      octahedron.setAttribute("radius", "2 0 2");
+      octahedron.setAttribute("radius", 2.5);
       octahedron.setAttribute("color", "purple");
 
   //Challenge 4: Add the <a-dodecahedron> to the scene
