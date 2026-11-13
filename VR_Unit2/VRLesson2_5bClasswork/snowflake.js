@@ -13,9 +13,11 @@ class Snowflake{
 
   fall(){
     this.y -= this.dy;
-    this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z})
+
     if(this.y < 0){
       this.y = rnd(10,20);
     }
+    this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z})
+
   }
 }
