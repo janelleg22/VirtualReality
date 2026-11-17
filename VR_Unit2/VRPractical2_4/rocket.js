@@ -3,7 +3,9 @@ class Rocket{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = Math.random() * 0.05 + 0.01;    this.obj = document.createElement("a-entity");
+    this.dy = Math.random() * 0.05 + 0.01;    
+    
+    this.obj = document.createElement("a-entity");
   
     let top = document.createElement("a-cone");
     top.setAttribute("position","0 2.5 0");
