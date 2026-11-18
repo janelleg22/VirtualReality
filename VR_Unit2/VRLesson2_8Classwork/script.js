@@ -10,8 +10,10 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function loop(){
   target.a += target.da;
-
   target.setAttribute("rotation",{x:target.a, y:0, z: 0});
 
+  if (target.a < 90) {
+    target.a += target.da;
+  }
   window.requestAnimationFrame( loop );
 }
