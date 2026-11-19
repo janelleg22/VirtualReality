@@ -11,13 +11,13 @@
 */
 
 let maze = [
+  "--x-------------------",
+  "----------------------",
+  "------------------x---",
+  "---------x------------",
   "----------------------",
   "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "--------T-------------",
   "----------------------",
   "----------------------",
   "----------------------",
@@ -37,6 +37,15 @@ window.addEventListener("DOMContentLoaded",function() {
     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 
+     let row = maze[ r ];
+     let cols = row.split();
+     for(let j = 0; j< cols.length;  j++){
+      let spot = cols[ j ];
+      if(spot=="x"){
+        new Block(j, 0, r);
+      }else if(spot=="T"){
+        new Tree =(j, 0, r)
+      }
     /* Challenge 4
        Make an appropriate decision based on the characters you chose to enter 
        in the maze.  Create an instance of the corresponding object.
